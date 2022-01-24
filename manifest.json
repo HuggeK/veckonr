@@ -23,8 +23,7 @@
 
 	"background": {
 		"scripts": [
-			"libs/moment-with-locales.min.js",
-			"js/background.js"
+			"background.js"
 		],
 		"persistent": false
 	}

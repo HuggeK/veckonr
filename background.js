@@ -19,19 +19,14 @@ var init = function() {
 	canvas.height = 19;
 	
 	var background = new Image();
-// Tillagt:
-	const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-	if(userPrefersDark){
-		background.src = "/images/calendar4.png";
-	}
-	else background.src = "/images/calendar3.png";
-
+	background.src = "/images/calendar3.png";
+	
 	background.onload = function() {
-		updateIcon(ctx, canvas, background, userPrefersDark);
+		updateIcon(ctx, canvas, background);
 	}
 }
 
-var updateIcon = function(ctx, canvas, background, userPrefersDark) {
+var updateIcon = function(ctx, canvas, background) {
 	drawBackground(ctx, background);
 
 		//Test med native JS!
@@ -66,7 +61,7 @@ var updateIcon = function(ctx, canvas, background, userPrefersDark) {
 	  
 	  console.log(text);
 
-	drawText(ctx, text, userPrefersDark); //det här att ta -2 riktigt sketchy.
+	drawText(ctx, text); //det här att ta -2 riktigt sketchy.
 
 	chrome.browserAction.setIcon({
 		"imageData": ctx.getImageData(0, 0, canvas.width, canvas.height)
@@ -77,13 +72,10 @@ var drawBackground = function(ctx, background) {
 	ctx.drawImage(background, 0, 0);
 }
 
-var drawText = function(ctx, text, userPrefersDark) {
+var drawText = function(ctx, text) {
 	var xOffset;
-//Tillagt:
-	if(userPrefersDark){
-    	ctx.fillStyle = 'rgba(255, 255, 255, 255)';
-	}
-	else ctx.fillStyle = 'rgba(0, 0, 0, 255)';
+
+	ctx.fillStyle = 'rgba(0, 0, 0, 255)';
 	ctx.font = "bold 10px Arial";
 
 	if (text.length > 1) {

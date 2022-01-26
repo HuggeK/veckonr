@@ -1,30 +1,26 @@
 {
-	"manifest_version" : 2,
-	"name": "__MSG_extensionName__",
-	"author": "Mathias Lundell / Hugo Karlsson",
-	"short_name": "Veckonr",
-	"version": "0.2",
-	"description": "__MSG_extensionDescription__",
-	"default_locale": "en",
-	"homepage_url": "https://github.com/HuggeK/veckonr",
-	
-	"icons": { "16" : "images/veckonr_icon_300.png",
-		"48" : "images/veckonr_icon_300.png",
-		"128" : "images/veckonr_icon_300.png"
-	},
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "author": "Mathias Lundell / Hugo Karlsson",
+  "short_name": "Veckonr",
+  "version": "0.3",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "en",
+  "homepage_url": "https://github.com/HuggeK/veckonr",
 
-	"permissions": [
-		"alarms"
-	],
+  "icons": {
+    "16": "images/veckonr_icon_300.png",
+    "48": "images/veckonr_icon_300.png",
+    "128": "images/veckonr_icon_300.png"
+  },
 
-	"browser_action": {
-		"default_title": "Veckonummer"
-	},
+  "permissions": ["alarms"],
 
-	"background": {
-		"scripts": [
-			"background.js"
-		],
-		"persistent": false
-	}
+  "action": {
+    "default_title": "Veckonummer"
+  },
+
+  "background": {
+    "service_worker": "js/service_worker.js"
+  }
 }

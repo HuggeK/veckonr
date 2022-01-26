@@ -1,7 +1,7 @@
 # Veckonr
 ![veckonr_icon_128](https://user-images.githubusercontent.com/48095810/130605912-97ae066b-ae88-4a48-824f-8fb13c3658e4.png)
 
-A Chromium extension to fast and easy show the week number in the brower toolbar. The extension follows the ISO 8601 standard.
+A Chromium extension to fast and easy show the week number in the browser toolbar. The extension follows the ISO 8601 standard.
 
 Available to download through [Microsoft Edge Add-ons store: ](https://microsoftedge.microsoft.com/addons/detail/veckonummer/bmoffkcljddjmejkgflbpfcchhjekahf)
 

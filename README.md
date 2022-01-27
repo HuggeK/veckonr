@@ -8,4 +8,5 @@ Available to download through [Microsoft Edge Add-ons store: ](https://microsoft
 Available to download through [chrome web store: ](https://chrome.google.com/webstore/detail/week-number/dgjiedcgmmfaolcgieilddloapakcfhh)
 
 <img width="500" alt="Edge_light_demo" src="https://user-images.githubusercontent.com/48095810/130601346-fef57495-ae29-4160-aa36-65322e1a06c0.png">
+
 ![Edge screenshot](https://user-images.githubusercontent.com/48095810/151400717-35bf4665-a9f3-482e-b829-dce60486f4a4.png)
